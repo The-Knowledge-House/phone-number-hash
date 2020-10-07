@@ -4,5 +4,15 @@
  * ' 111-223-1123 ' should be ' ***-***-1123 '
  */
 
+const encryptPhoneNumber = num => {
+    let onlyNums = num.split('').filter(val => Number(val)).fill('*', 0, 6);
+
+    onlyNums.splice(3, 0, '-'), onlyNums.splice(7, 0, '-');
+
+    return onlyNums.join('');
+}
+
+console.log(encryptPhoneNumber('9171232456'));
+
 
 module.exports = encryptPhoneNumber;
