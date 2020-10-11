@@ -11,7 +11,7 @@ function encryptPhoneNumber (number) {
              arrayOfNums[i]= "*";
          }
      }
-     return arrNums.join("");
+     return arrayOfNums.join("");
  }
 
 
