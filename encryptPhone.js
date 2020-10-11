@@ -12,7 +12,9 @@ const encryptPhoneNumber = num => {
     return onlyNums.join('');
 }
 
+// accounts for inputs with or without dashes
 console.log(encryptPhoneNumber('9171232456'));
+console.log(encryptPhoneNumber('718-321-9876'));
 
 
 module.exports = encryptPhoneNumber;
