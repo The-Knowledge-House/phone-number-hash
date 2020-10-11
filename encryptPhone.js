@@ -5,4 +5,14 @@
  */
 
 
+ function encryptPhoneNumber (number) {
+     let arrNums = number.split("");
+     for (let i = 0; i < arrNums.length-5; i++) {
+         if(arrNums[i] !== "-"){
+             arrNums[i]= "*"
+         }
+     }
+     return arrNums.join("")
+ }
+
 module.exports = encryptPhoneNumber;
