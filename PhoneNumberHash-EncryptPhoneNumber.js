@@ -4,5 +4,15 @@
  * ' 111-223-1123 ' should be ' ***-***-1123 '
  */
 
+function encryptPhoneNumber (number) {
+     let arrayOfNums = number.split("");
+     for (let i = 0; i < arrayOfNums.length-5; i++) {
+         if(arrayOfNums[i] !== "-"){
+             arrayOfNums[i]= "*";
+         }
+     }
+     return arrNums.join("");
+ }
+
 
 module.exports = encryptPhoneNumber;
