@@ -6,3 +6,17 @@
 
 
 module.exports = encryptPhoneNumber;
+
+function encryptPhoneNumber(num) {
+    let hideMe = [];
+      for(let i = 0; i < num.length; i++){
+      if(i < num.length-4){
+        hideMe.push("*");
+      }else{
+        hideMe.push(num[i]);
+      }
+    }
+    return hideMe.join("");
+  } // endFUNC.
+  
+  console.log(encryptPhoneNumber('12345678'))
