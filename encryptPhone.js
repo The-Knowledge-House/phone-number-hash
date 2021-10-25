@@ -18,6 +18,4 @@ function encryptPhoneNumber(phoneNumber) {
 	}
 	return encrypted;
 }
-
 module.exports = encryptPhoneNumber;
-//
